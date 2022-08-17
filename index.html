@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <link rel="icon" type="image/svg" href="/favicon.svg">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <script src="https://unpkg.com/akar-icons-fonts"></script>
+      <title>Layout-burnault</title>
+    </head>
+    <body>
+      <div id="app">
+        <h1 class="title">{{ title }}</h1>
+        <br>
+        <p>{{ $store.state.count }}</p>
+      </div>
+
+      <script src="https://unpkg.com/dexie/dist/dexie.js"></script>
+      <script src="https://unpkg.com/vue@3"></script>
+      <script src="https://unpkg.com/vuex@4"></script>
+      <script src="app.js" type="module"></script>
+    </body>
+</html>
