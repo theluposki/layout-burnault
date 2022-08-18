@@ -10,6 +10,7 @@
   --dark: #333333;
   --white: #fafafa;
   --silver: #d5d5d5;
+  --blue: #93A3FB;
 }
 
 html {
@@ -17,4 +18,175 @@ html {
   height: 100%;
   background-color: var(--silver);
   font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  color: var(--dark)
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header__main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-color: var(--white);
+  z-index: 10;
+}
+
+.header__main img {
+  width: 45px;
+  height: 55px;
+}
+
+.section__box {
+  min-width: 100%;
+  min-height: 600px;
+  background-color: var(--white);
+}
+
+.sec__01 {
+  background-color: var(--blue);
+  background-image: url("assets/img/persons_chat.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec__01__Input {
+  position: relative;
+  width: 80vw;
+  min-height: 58px;
+  border-radius: 30px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  box-shadow: 2px 2px 2px var(--dark);
+}
+
+.sec__01__Input:hover {
+  transition: all ease-in-out 0.4s;
+  outline: solid 1px #000;
+}
+
+.sec__01__Input label {
+  position: absolute;
+  top: -130px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: 2px 2px 2px var(--dark);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.sec__01__Input input {
+  border-radius: 30px 0 0 30px;
+  width: 100%;
+  border: solid 1px transparent;
+  padding: 0 16px;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.sec__01__Input input:hover, .sec__01__Input input:focus {
+  opacity: 0.6;
+}
+
+.sec__01__Input button {
+  border: solid 1px transparent;
+  padding: 0 16px;
+  font-size: 1.6rem;
+  background-color: var(--silver);
+  color: var(--dark);
+}
+
+.sec__01__Input button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.sec__01__Input button:active {
+  transition: all ease 0.1s;
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.i-left {
+  border-radius: 30px;
+}
+
+.i-right {
+  border-radius: 0 30px 30px 0;
+}
+
+.sec__01__Input span {
+  position: absolute;
+  bottom: 0px;
+  left: -70px;
+  color: var(--dark);
+  font-size: 2rem;
+  padding: 8px 16px;
+  background-color: var(--white);
+  box-shadow: 2px 2px 2px var(--dark);
+  border-radius: 50%;
+}
+
+.sec__01__Input span:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.sec__01__Input span:active {
+  transition: all ease 0.1s;
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+
+.section__text {
+  margin: 20px 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .sec__01__Input label {
+    position: absolute;
+    top: -190px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px var(--dark);
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .sec__01 {
+    transition: all ease 1.5s;
+    background-size: 270%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

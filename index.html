@@ -3,16 +3,38 @@
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-      <link rel="icon" type="image/svg" href="/favicon.svg">
+      <link rel="icon" type="image/svg" href="favicon.svg">
       <link rel="stylesheet" type="text/css" href="style.css">
       <script src="https://unpkg.com/akar-icons-fonts"></script>
-      <title>Layout-burnault</title>
+      <title>Layout Burnault</title>
     </head>
     <body>
       <div id="app">
-        <h1 class="title">{{ title }}</h1>
-        <br>
-        <p>{{ $store.state.count }}</p>
+        <header class="header__main">
+          <img src="assets/img/logo.png" alt="logotipo">
+        </header>
+
+        <div class="section__box sec__01">
+          <div class="sec__01__Input">
+            <label for="inputInitChat">Comece agora mesmo a conversar</label>
+            <button class="i-left">
+              <i class="ai-clipboard"></i>
+            </button>
+            <input tabindex="0'" type="text" id="inputInitChat" placeholder="Chave">
+            <button class="i-right">
+              <i class="ai-send"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="section__text text__01">
+          <h1>{{ title }}</h1>
+        </div>
+
+        <div class="section__box">
+
+        </div>
+
       </div>
 
       <script src="https://unpkg.com/dexie/dist/dexie.js"></script>
