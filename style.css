@@ -166,6 +166,48 @@ html {
   text-align: center;
 }
 
+.row {
+  min-width: 100%;
+  min-height: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 40px;
+}
+
+.card {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: solid 1px var(--dark);
+  box-shadow: 5px 5px 3px var(--dark);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card > main {
+  min-height: 150px;
+  padding: 20px;
+}
+
+.card > main > p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.card > footer {
+  display: flex;
+  align-items: center;
+  min-height: 66px;
+  padding: 0 20px;
+}
+
 @media only screen and (max-width: 800px) {
   .sec__01__Input label {
     position: absolute;
@@ -188,5 +230,18 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .section__box {
+    overflow-x: scroll;
+  }
+
+  .row {
+    justify-content: flex-start;
+  }
+
+  .card {
+    min-width: 320px;
+    min-height: 450px;
   }
 }
